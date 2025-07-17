@@ -17,7 +17,7 @@ This app allows you to control virtual Mars rovers by issuing movement and rotat
 
 ### Prerequisites
 
--   [Node.js](https://nodejs.org/)
+-   [Node.js](https://nodejs.org/) v22.7.0
 -   Clone this repository
 
 ### Installation
@@ -44,15 +44,14 @@ pnpm test
     pnpm run dev
     ```
 
-2. App will run on the port 3000: http://localhost:3000/
+2. App will run on the port 3000.
    You can access the API "http://localhost:3000/rovers/positions" to fetch the rovers position
 
 3. Follow the prompts to input grid size, rover position, and commands.
 
-## Example curl command
+#### Example curl command
 
-````
-
+```
 curl -X POST http://localhost:3000/rovers/positions \
  -H "Content-Type: application/json" \
  -d '{
@@ -61,7 +60,19 @@ curl -X POST http://localhost:3000/rovers/positions \
 
 ```
 
-## Example Output
+#### Example Input
+
+```
+
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
+
+```
+
+#### Example Output
 
 ```
 
@@ -84,5 +95,3 @@ curl -X POST http://localhost:3000/rovers/positions \
 ## License
 
 [MIT](Ravneet Anand)
-```
-````
