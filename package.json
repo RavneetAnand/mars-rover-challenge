@@ -1,0 +1,36 @@
+{
+    "name": "mars-rover-challenge",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "tsx --watch src/index.ts",
+        "start": "node dist/index.js",
+        "build": "tsc",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "test": "pnpm vitest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^17.1.0",
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "@tsconfig/node22": "^22.0.2",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/node": "^24.0.12",
+        "@vitest/coverage-v8": "^3.2.4",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3",
+        "vitest": "^3.2.4"
+    }
+}
