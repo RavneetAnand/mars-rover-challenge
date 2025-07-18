@@ -10,8 +10,6 @@ This app allows you to control virtual Mars rovers by issuing movement and rotat
 
 -   Command the rover with simple instructions (e.g., `L`, `R`, `M`)
 -   Grid-based navigation
--   Obstacle detection (if implemented)
--   Extensible for multiple rovers
 
 ## Getting Started
 
@@ -94,4 +92,4 @@ MMRMMRMRRM
 
 ## License
 
-[MIT](Ravneet Anand)
+Ravneet Anand
